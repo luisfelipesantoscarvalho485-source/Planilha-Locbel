@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Abastecimento e Manutenção Diária</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="folha">
+      
+      <h1>CONTROLE DE ABASTECIMENTO MÓVEL E MANUTENÇÃO DIÁRIA</h1>
+
+      <div class="topo">
+        <h2>Nome: <span>MARCELO WILLYANS</span></h2>
+        <h2>Data: <input type="date" /></h2>
+      </div>
+
+      <div class="botoes">
+        <button onclick="enviarWhatsApp()">Enviar WhatsApp</button>
+        <button onclick="limparDados()">Limpar Dados</button>
+      </div>
+
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Máquinas</th>
+              <th>Selecione</th>
+              <th>Horímetro/Hr</th>
+              <th>Óleo Diesel</th>
+              <th>Filtros</th>
+              <th>Óleo Motor/Torque - 15WD40</th>
+              <th>Filtros</th>
+              <th>Prox. Revisão</th>
+              <th>Graxa</th>
+              <th>Local Obras</th>
+              <th>Operador</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            
+            <tr>
+              <td>ESCAVA SANY 80268</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+              <td><textarea></textarea></td>
+            </tr>
+
+            <tr>
+              <td>FB 80 3716</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>FD-9 - 20302</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>FH 200 - 292</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>FH 240 - 062</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>FH 240 - 0029</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>HYUNDAI - 140 3069</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>KVA-5934</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>L50C-11733</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>LFK-8758</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>LGS-0982</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>LPF-8085</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>MINI ESCAV 850B 29</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>MINI ESCAV SY55C-9758</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>MINI PÁ 218 L-58</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>MINI PÁ 218 L-61</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>MINI PÁ SL 55-90069</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>RETRO JCB 3CO 0879</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>ROLO CDM 512D LONG</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>WA 320 - 21149</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+
+            <tr>
+              <td><input  class="adicionar"type="text" placeholder="Máquina Alugada"/></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td><input  class="adicionar"type="text" placeholder="Máquinas Alugada"/></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td><input  class="adicionar"type="text" placeholder="Máquina Alugada"/></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td><input  class="adicionar"type="text" placeholder="Máquina Alugada"/></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+
+            <tr>
+              <td><input  class="adicionar"type="text" placeholder="Máquina Alugada"/></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" /></td>
+              <td><textarea></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="acao.js"></script>
+  </body>
+</html>
