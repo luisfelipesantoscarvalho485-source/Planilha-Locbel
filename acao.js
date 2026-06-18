@@ -90,6 +90,16 @@ function limparDados() {
   }
 }
 
+function pegarValor(linha, coluna, seletor = "input, textarea") {
+  const campo = linha.children[coluna]?.querySelector(seletor);
+  return campo ? campo.value : "";
+}
+
+function pegarCheck(linha, coluna) {
+  const campo = linha.children[coluna]?.querySelector("input");
+  return campo ? campo.checked : false;
+}
+
 function enviarWhatsApp() {
   let mensagem = "CONTROLE DE ABASTECIMENTO MÓVEL E MANUTENÇÃO DIÁRIA\n\n";
 
@@ -99,9 +109,7 @@ function enviarWhatsApp() {
 
   if (data) {
     mensagem += "Data: " + data + "\n";
-
   }
-  
 
   mensagem += "\n";
 
@@ -110,24 +118,26 @@ function enviarWhatsApp() {
 
   linhas.forEach((linha) => {
     const primeiraCelula = linha.children[0];
+
+    if (!primeiraCelula) return;
+
     const inputMaquina = primeiraCelula.querySelector("input");
+    const maquina = inputMaquina ? inputMaquina.value : primeiraCelula.innerText.trim();
 
-    const maquina = inputMaquina ? inputMaquina.value : primeiraCelula.innerText;
-
-    const selecionado = linha.children[1].querySelector("input").checked;
+    const selecionado = pegarCheck(linha, 1);
 
     if (selecionado) {
       temMaquinaSelecionada = true;
 
-      const horimetro = linha.children[2].querySelector("input").value;
-      const oleoDiesel = linha.children[3].querySelector("input").value;
-      const filtroDiesel = linha.children[4].querySelector("input").checked ? "Sim" : "Não";
-      const oleoMotor = linha.children[5].querySelector("input").value;
-      const filtroOleo = linha.children[6].querySelector("input").checked ? "Sim" : "Não";
-      const proxRevisao = linha.children[7].querySelector("input").value;
-      const graxa = linha.children[8].querySelector("textarea").value;
-      const localObras = linha.children[9].querySelector("input, textarea").value;
-      const operador = linha.children[10].querySelector("input, textarea").value;
+      const horimetro = pegarValor(linha, 2);
+      const oleoDiesel = pegarValor(linha, 3);
+      const filtroDiesel = pegarCheck(linha, 4) ? "Sim" : "Não";
+      const oleoMotor = pegarValor(linha, 5);
+      const filtroOleo = pegarCheck(linha, 6) ? "Sim" : "Não";
+      const proxRevisao = pegarValor(linha, 7);
+      const graxa = pegarValor(linha, 8);
+      const localObras = pegarValor(linha, 9);
+      const operador = pegarValor(linha, 10);
 
       mensagem += "Máquina: " + maquina + "\n";
       mensagem += "Horímetro/Hr: " + horimetro + "\n";
