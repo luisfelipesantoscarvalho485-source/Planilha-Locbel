@@ -145,6 +145,9 @@ const operador = pegarValor(linha, 12);
       mensagem += "Graxa: " + graxa + "\n";
       mensagem += "Local Obras: " + localObras + "\n";
       mensagem += "Operador: " + operador + "\n";
+      mensagem += "Óleo HD68: " + oleoHD68 + "\n";
+      mensagem += "Filtro HD68: " + filtroHD68 + "\n";
+      
       mensagem += "-----------------------------\n";
     }
   });
