@@ -128,17 +128,13 @@ function enviarWhatsApp() {
 
     if (selecionado) {
       temMaquinaSelecionada = true;
-
-      const horimetro = pegarValor(linha, 2);
-      const oleoDiesel = pegarValor(linha, 3);
-      const filtroDiesel = pegarCheck(linha, 4) ? "Sim" : "Não";
-      const oleoMotor = pegarValor(linha, 5);
-      const filtroOleo = pegarCheck(linha, 6) ? "Sim" : "Não";
-      const proxRevisao = pegarValor(linha, 7);
-      const graxa = pegarValor(linha, 8);
-      const localObras = pegarValor(linha, 9);
-      const operador = pegarValor(linha, 10);
-
+const oleoHD68 = pegarValor(linha, 7);
+const filtroHD68 = pegarValor(linha, 8);
+const proxRevisao = pegarValor(linha, 9);
+const graxa = pegarValor(linha, 10);
+const localObras = pegarValor(linha, 11);
+const operador = pegarValor(linha, 12);
+      
       mensagem += "Máquina: " + maquina + "\n";
       mensagem += "Horímetro/Hr: " + horimetro + "\n";
       mensagem += "Óleo Diesel: " + oleoDiesel + "\n";
